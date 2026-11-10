@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F5F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Détails du contact"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#263B59"
+            android:gravity="center"
+            android:padding="12dp" />
+
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            android:scaleType="centerCrop"
+            android:contentDescription="Photo du contact" />
+
+        <Button
+            android:id="@+id/btnGalerie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choisir une photo depuis la galerie" />
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prendre une photo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textStyle="bold"
+            android:textColor="#263B59"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/edtNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saisir le nom"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prénom"
+            android:textStyle="bold"
+            android:textColor="#263B59" />
+
+        <EditText
+            android:id="@+id/edtPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saisir le prénom"
+            android:inputType="textPersonName"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Téléphone"
+            android:textStyle="bold"
+            android:textColor="#263B59" />
+
+        <EditText
+            android:id="@+id/edtTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saisir le numéro"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adresse e-mail"
+            android:textStyle="bold"
+            android:textColor="#263B59" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Saisir l'adresse e-mail"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
+
+        <Button
+            android:id="@+id/btnAppeler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Appeler" />
+
+        <Button
+            android:id="@+id/btnEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoyer un e-mail" />
+
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#247A55" />
+
+        <Button
+            android:id="@+id/btnAnnuler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annuler"
+            android:backgroundTint="#B84040" />
+
+    </LinearLayout>
+
+</ScrollView>
